@@ -1,0 +1,59 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "Go Compiler Rules",
+	"patterns": [
+		{
+			"name": "comment.line.double-slash.gorules",
+			"match": "\\s*//.*"
+		},
+		{
+			"name": "entity.name.type.gorules",
+			"match": "(?<=<)[\\sa-zA-Z0-9\\.,\\(\\)]*(?=>)"
+		},
+		{
+			"name": "entity.name.aux.gorules",
+			"match": "(?<={)[\\sa-zA-Z0-9\\.,\\(\\)]*(?=})"
+		},
+		{
+			"name": "entity.name.auxint.gorules",
+			"match": "(?<=\\[)[\\s\\-+a-zA-Z0-9\\.,\\(\\)]*(?=\\])"
+		},
+		{
+			"name": "keyword.operator.arrow.gorules",
+			"match": "->"
+		},
+		{
+			"name": "keyword.operator.andand.gorules",
+			"match": "&&"
+		},
+		{
+			"name": "keyword.operator.ellipsis.gorules",
+			"match": "\\.\\.\\."
+		},
+		{
+			"name": "keyword.operator.atblock.gorules",
+			"match": "(?<=-> )@\\w+\\.Block(?=\\s)"
+		},
+		{
+			"name": "entity.name.variable.gorules",
+			"match": "(?<=\\s)\\w+:(?=\\()"
+		},
+		{
+			"include": "#strings"
+		}
+	],
+	"repository": {
+		"strings": {
+			"name": "string.quoted.double.gorules",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [
+				{
+					"name": "constant.character.escape.gorules",
+					"match": "\\\\."
+				}
+			]
+		}
+	},
+	"scopeName": "source.gorules"
+}

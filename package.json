@@ -1,0 +1,34 @@
+{
+    "name": "go-compiler-rules",
+    "displayName": "go_compiler_rules",
+    "description": "go compiler rules",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.41.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [
+            {
+                "id": "gorules",
+                "aliases": [
+                    "Go Compiler Rules",
+                    "gorules"
+                ],
+                "extensions": [
+                    ".rules"
+                ],
+                "configuration": "./language-configuration.json"
+            }
+        ],
+        "grammars": [
+            {
+                "language": "gorules",
+                "scopeName": "source.gorules",
+                "path": "./syntaxes/gorules.tmLanguage.json"
+            }
+        ]
+    }
+}
