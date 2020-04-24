@@ -8,7 +8,7 @@
 		},
 		{
 			"name": "entity.name.type.gorules",
-			"match": "(?<=<)[\\sa-zA-Z0-9\\.,\\(\\)]*(?=>)"
+			"match": "(?<=<)[\\sa-zA-Z0-9\\.\\*,\\(\\)]*(?=>)"
 		},
 		{
 			"name": "entity.name.aux.gorules",
@@ -16,7 +16,7 @@
 		},
 		{
 			"name": "entity.name.auxint.gorules",
-			"match": "(?<=\\[)[\\s\\-+\\|\\^<>a-zA-Z0-9\\.,\\(\\)]*(?=\\])"
+			"match": "(?<=\\[)[\\s\\-+\\|\\^<>\\*&a-zA-Z0-9\\.,\\(\\)]*(?=\\])"
 		},
 		{
 			"name": "keyword.operator.arrow.gorules",
