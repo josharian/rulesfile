@@ -23,6 +23,10 @@
 			"match": "->"
 		},
 		{
+			"name": "keyword.operator.arrow.gorules",
+			"match": "=>"
+		},
+		{
 			"name": "keyword.operator.andand.gorules",
 			"match": "&&"
 		},
